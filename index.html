@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <style>
+        html{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            background-color: #ffffff;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .main {
+            width: 100%
+        }
+
+        @media all and (min-width: 1000px) {
+            .main {
+                width: 50%;
+                margin: auto;
+            }
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.rwdImageMaps.min.js"></script>
+    <script src="./js/ios-orientationchange-fix.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <img class="pc-image" src="./img/lottery.png" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="" alt="1" title="1" href="http://pf.kakao.com/_GSelG" target="blank" coords="991,31,1135,119" shape="rect">
+            <area target="" alt="2" title="2" href="http://pf.kakao.com/_GSelG" target="blank" coords="129,3259,574,3345" shape="rect">
+            <area target="" alt="3" title="3" href="http://t.me/lottery_bill" target="blank" coords="607,3258,1050,3349" shape="rect">
+          
+          
+    </div>
+
+    <script src="chrome-extension://hhojmcideegachlhfgfdhailpfhgknjm/web_accessible_resources/index.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function (e) {
+                $('.pc-image').rwdImageMaps();
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>
